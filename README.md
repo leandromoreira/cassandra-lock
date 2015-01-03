@@ -6,25 +6,28 @@ A ruby lib to achieve consensus with Cassandra, inspired by a [post](http://www.
 
 Add this line to your application's Gemfile:
 
-``ruby
+```ruby
 gem 'cassandra_lock'
 ```
 
 And then execute:
 
-    $ bundle
+```$ bundle```
 
 Or install it yourself as:
 
-    $ gem install cassandra_lock
+```$ gem install cassandra_lock```
 
 ## Usage
 
-Create keyspace, see the example bellow.
+Create the keyspace, see the example bellow.
+
 ```SQL
 CREATE KEYSPACE test_lock WITH REPLICATION = { 'class' : 'NetworkTopologyStrategy', 'datacenter1' : 1 };
+```
 
-Create the table.
+Create the table, see the example bellow.
+
 ```SQL
 CREATE TABLE test_lock.leases (
       name text PRIMARY KEY,
@@ -32,7 +35,9 @@ CREATE TABLE test_lock.leases (
       value text
  ) with default_time_to_live = 5
 ```
+
 And finally to use in your code:
+
 ```ruby
 #to create
 contact_points = ["127.0.0.1"]
