@@ -1,5 +1,5 @@
 require "cassandra_lock/version"
 
 module CassandraLock
-  # Your code goes here...
+  autoload :Client, 'cassandra_lock/client'
 end
