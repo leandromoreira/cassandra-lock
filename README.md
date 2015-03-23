@@ -1,3 +1,6 @@
+[![Dependency Status](https://gemnasium.com/leandromoreira/cassandra-lock.svg)](https://gemnasium.com/leandromoreira/cassandra-lock)
+
+
 # cassandra\_lock
 
 A ruby lib to achieve [consensus](http://en.wikipedia.org/wiki/Consensus_%28computer_science%29) with Cassandra, inspired by [consensus on cassandra](http://www.datastax.com/dev/blog/consensus-on-cassandra). It can be used as lock in distributed systems.
