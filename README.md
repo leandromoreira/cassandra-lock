@@ -1,5 +1,4 @@
-[![Dependency Status](https://gemnasium.com/leandromoreira/cassandra-lock.svg)](https://gemnasium.com/leandromoreira/cassandra-lock)
-
+[![Gem Version](https://badge.fury.io/rb/cassandra_lock.svg)](http://badge.fury.io/rb/cassandra_lock)
 
 # cassandra\_lock
 
